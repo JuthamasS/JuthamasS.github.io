@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'LastguyShop';
+  ShopName = 'LastguyShop';
   i:number = 0;
   products = ['nail','hammer','saw','sling'];
 
-  showMessage(){
-    return this.title;
+  showShopName(){
+    return this.ShopName;
   }
   addCount(){
     this.i++;
