@@ -18,7 +18,24 @@
     </div>
   </nav>
 </header>
-
+<div class="container">
+  <form role="form" #searchForm="ngForm" (submit)="onSubmit(searchform)">
+    <div class="form-group"></div>
+    <!-- <label for="productName">ชื่อสินค้า : </label> -->
+    <div class="row">
+      <div class="col-10">
+        <input id="searchInput" class="form-control"
+        [(ngModel)]="ngModel.name"
+        name="productName" type="text" placeholder="ชื่อสินค้า">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <button type="submit">GO!</button>
+      </div>
+    </div>
+  </form>
+</div>
 
 <!-- <ul>
   <li>

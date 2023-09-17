@@ -10,7 +10,16 @@ export class AppComponent {
   i:number = 0;
   products = ['nail','hammer','saw','sling'];
   parentCount = 0;
+  product!: Product;
+  str!: string;
 
+  ngOnInit(){
+    this.product = new Product();
+  }
+  onSubmit(){
+    this.str ="ค่าจากการค้นหา : " + JSON.stringify(this.product);
+    window.alert(this.str);
+  }
   showShopName(){
     return this.ShopName;
   }
@@ -23,5 +32,11 @@ export class AppComponent {
   SearchProduct(){
     this.parentCount = this.parentCount + 1;
   }
+ }
 
+ class Product {
+  productName:string;
+  constructor(parameters="123") {
+    this.productName = parameters;
+  }
 }
