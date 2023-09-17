@@ -1,19 +1,43 @@
-<div style="text-align: center;">
+<header>
+  <nav class="navbar navbar-expand-sm navbar-toogleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+    <div class="container">
+      <a class="navbar-brand" routeLink="/"><h3>Lastguy Shop</h3></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item" routerLinkActive="link-active">
+            <a class="nav-link text-light" routerLink="/search">ค้นหาสินค้า</a>
+          </li>
+          <li class="nav-item" routerLinkActive="link-active">
+            <a class="nav-link text-light" routerLink="/stock">สต๊อกสินค้า</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- <div style="text-align: center; margin: 20px;">
   <h1>
     {{ showShopName() }}
   </h1>
 </div>
-<div class="btn-toolbar" role="toolbar">
-  <div class="btn-group mr-3" role="group" aria-label="Group 1">
-    <button type="button" class="btn btn-primary">ค้นหา</button>
-    <button type="button" class="btn btn-primary">สต๊อก</button>
+<div class="row" style="text-align: center;">
+  <div role="toolbar">
+    <div class="btn-group mr-3" role="group" aria-label="Group 1">
+      <a routerLink="/search"><div class="col"><button type="button" class="btn btn-orange">ค้นหาสินค้า</button></div></a>
+      <a routerLink="/stock"><div class="col"><button type="button" class="btn btn-orange">สต๊อกสินค้า</button></div></a>
+    </div>
   </div>
 </div>
+
+
+<div class="col"><button type="button" class="btn btn-orange" (click)="SearchProduct()">ค้นหา {{parentCount}}</button></div>
 <div class="row">
-  <div class="col">
-    <app-search></app-search>
-  </div>
-</div>
+  <app-search></app-search>
+</div> -->
 
 
 
