@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
   searchProduct(id:number){
     console.log(this.productId);
   }
-  ngOnInit(): void {
+  ngOnInit() {
     console.log("search");
   }
   clearCount(){
