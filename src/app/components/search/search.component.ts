@@ -14,7 +14,7 @@ export class SearchComponent implements OnInit {
     console.log(this.productId);
   }
   ngOnInit(): void {
-    
+    console.log("search");
   }
   clearCount(){
     this.onClearCount.emit(0);
