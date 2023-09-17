@@ -1,5 +1,35 @@
-<div>{{ showShopName() }}</div>
-<br />
+<div style="text-align: center;">
+  <h1>
+    {{ showShopName() }}
+  </h1>
+</div>
+<div class="btn-toolbar" role="toolbar">
+  <div class="btn-group mr-3" role="group" aria-label="Group 1">
+    <button type="button" class="btn btn-primary">ค้นหา</button>
+    <button type="button" class="btn btn-primary">สต๊อก</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <app-search></app-search>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <button class="btn btn-primary" (click)="addCount()"> เติมสต๊อก</button>
 <br />
 <br />
@@ -12,4 +42,6 @@
 </ul> -->
 
 <!-- <app-product></app-product> -->
-<app-search></app-search>
+
+
+
